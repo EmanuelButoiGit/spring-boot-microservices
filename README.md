@@ -6,6 +6,7 @@ I used Gradle instead of Maven as my java build tool.
 
 <br>
 A little summary to understand what's going on in this project:
+<br><br>
 
 ![multi-threading](https://user-images.githubusercontent.com/72088440/187515784-59262663-cdd4-4d01-b4c1-1c212f598903.PNG)
 

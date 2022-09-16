@@ -1,0 +1,43 @@
+💪 Fault Tolerance 💪:
+
+Given in a application if there is a fault, what is the impact of that fault?
+How much tolerance does the system have?
+
+FAULT TOLERANCE = IMPACT
+
+
+🛡️ Resilience 🛡️:
+How many faults can a system tolerate? 
+That indicates the resilience can the system tolerate and how much a system can bounce back, can be restored.
+
+RESILIENCE = ABILITY TO BE RESTORED
+
+
+How do we do microservicies resilient?
+
+🚩 Issues with microservicies 🚩 :
+
+Scenario 1:
+A microservice instance goes down.
+
+💡 The solution is to run multiple instances (create duplicate instances).
+
+
+Scenario 2:
+A microservice instance is slow.
+
+Let's say we have an external API Movied DB that is slow. Unreleated services will be slower as well.
+
+Why are unreleated microservicies affected? 
+Webserver can be out of resources because is occupied by too many threads that are ready for upcoming requests.
+
+💡 The solution is to create timeouts to free resources (remove threads).
+    🍃 In SpringBoot use timeouts to RestTemplate when you make API calls.
+        🍃 When somebody is not returning a response end call and return error.
+
+Does this solve the problem? 
+Let's say we have a timer of 3 sec but the request is faster (1 sec).
+That's a problem because the requst are faster than the time consumed on threads.
+3 sec for a request to be timed out, but 3 new request are coming, so the issue is not solved in this case.
+
+The is issue is solved partialy 🌗.

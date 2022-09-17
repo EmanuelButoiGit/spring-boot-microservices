@@ -52,11 +52,21 @@ Circuit breaker parameters (the triggers to break a Circuit):
     - Look at the last N requests and see how many are failing
     - How much do you wait to mark a request as a failure 
 
-⚙️ What should we do when we don't send a request the slow microservice (when a circuit breaks)?
+⚙️ What should we do when we don't send a request to the slow microservice (when a circuit breaks)?
 
 💡 We need a fallback 🌊, we can:
 - throw an error
 - return a fallback "default" response
 - save previous responses (cache) and use that when possible
 
-This is very hard to implement, but thankfully we can introduce in our 🍃 SpringBoot app 🍃 a library called Hystrix.
+This is very hard to implement, but thankfully we can introduce in our 🍃 SpringBoot app 🍃 a library called Resilience4j  
+(implements circuit breaker pattern).
+
+
+📽️ Scenario 3:
+Same as scenario 2 a microservice is slow but what if we solve it in a different way?
+
+Bulkhead Pattern 🚢:
+Inspired by the ship buckets that prevent water to spread into the entire ship.
+
+💡 Solution: What if we have separate thread pools for slow microservices requests?

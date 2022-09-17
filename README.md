@@ -20,10 +20,10 @@ A little summary to understand what's going on in this project:
 
 # spring-boot-microservices-level-2
 
-You can see a summary text called "spring-boot-microservices-level-2.txt".
-There are also some changes in the project, I added some timeouts and a library to implement Circuit Breaker Pattern 💡.
-I will try to make a separate project to use this patter and also the Bulkhead Pattern 🚢.
+You can see a summary text called "spring-boot-microservices-level-2.txt".<br>
+There are also some changes in the project, I added some timeouts and a library to implement Circuit Breaker Pattern 💡.<br>
+I will try to make a separate project to use this patter and also the Bulkhead Pattern 🚢.<br>
 
-<br<br>
+<br><br>
 
 You can find level 2 workshop here: https://youtube.com/playlist?list=PLqq-6Pq4lTTbXZY_elyGv7IkKrfkSrX5e.

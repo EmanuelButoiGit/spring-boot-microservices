@@ -12,11 +12,10 @@ A little summary to understand what's going on in this project:
 <br><br>
 ![multi-threading](https://user-images.githubusercontent.com/72088440/187515784-59262663-cdd4-4d01-b4c1-1c212f598903.PNG)
 
-<br>
+<br><br>
 ![Capture](https://user-images.githubusercontent.com/72088440/187515806-511a4dc1-c4ad-44aa-8de8-c0837ea39e84.PNG)
 
 <br><br>
-
 # spring-boot-microservices-level-2
 
 You can see a summary text called "spring-boot-microservices-level-2.txt".<br>
